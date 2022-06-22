@@ -12,12 +12,12 @@ public class ConverterController {
         return "Hi, welcome in the unit converter";
     }
 
-    @RequestMapping("/ounceConverter")
+    @RequestMapping("/ounce")
     public double ounceToGram(@RequestParam double a){
         return converter.ounce(a);
     }
 
-    @RequestMapping("/stoneConverter")
+    @RequestMapping("/stone")
     public double stoneToKilo(@RequestParam double b){
         return converter.stone(b);
 
