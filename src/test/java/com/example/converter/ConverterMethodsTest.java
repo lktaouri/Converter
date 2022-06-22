@@ -16,10 +16,26 @@ class ConverterMethodsTest {
     }
 
     @Test
-    void stone(){
+    void stone() {
         double c = testing.stone(1);
         double d = 6.35;
-        assertEquals(c,d);
+        assertEquals(c, d);
+
+    }
+        @Test
+        void ounce2(){
+            double a = testing.ounce(0);
+            double b = 0;
+            assertEquals(a,b);
+
+
+        }
+
+        @Test
+        void stone2(){
+            double c = testing.stone(0);
+            double d = 0;
+            assertEquals(c,d);
 
 
     }
