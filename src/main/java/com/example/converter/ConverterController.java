@@ -9,7 +9,7 @@ public class ConverterController {
     ConverterMethods converter = new ConverterMethods();
     @RequestMapping
     public String home(){
-        return "Hi, welcome in the unit converter";
+        return "Hi, welcome to the unit converter";
     }
 
     @RequestMapping("/ounce")
