@@ -6,19 +6,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ConverterController {
+    ConverterMethods converter = new ConverterMethods();
     @RequestMapping
     public String home(){
-        return "Hi, welcome in the unit converter";
+        return "Hi, welcome to the unit converter";
     }
 
-    @RequestMapping("/ounceConverter")
-    public double ounceToGram(@RequestParam double b){
-        return 0.0;
+    @RequestMapping("/ounce")
+    public double ounceToGram(@RequestParam double a){
+        return converter.ounce(a);
     }
 
-    @RequestMapping("/stoneConverter")
+    @RequestMapping("/stone")
     public double stoneToKilo(@RequestParam double b){
-        return 0.0;
+        return converter.stone(b);
 
     }
 }
